@@ -6,8 +6,6 @@ import {
   Clock,
   Instagram,
   Facebook,
-  Linkedin,
-  Youtube,
 } from "lucide-react";
 import ContactForm from "@/components/ui/ContactForm";
 
@@ -20,19 +18,19 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "(952) 555-0123",
-    href: "tel:+19525550123",
+    value: "(651) 325-8483",
+    href: "tel:+16513258483",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "maddy@maddycanaday.com",
-    href: "mailto:maddy@maddycanaday.com",
+    value: "madelinecanaday@kw.com",
+    href: "mailto:madelinecanaday@kw.com",
   },
   {
     icon: MapPin,
     label: "Office",
-    value: "4999 France Ave S, Edina, MN 55410",
+    value: "7401 Metro Blvd Suite 350, Edina, MN 55439",
     href: null,
   },
 ];
@@ -44,10 +42,8 @@ const officeHours = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, label: "Instagram", href: "#" },
-  { icon: Facebook, label: "Facebook", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Youtube, label: "YouTube", href: "#" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/maddy.canaday/" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/maddycanaday" },
 ];
 
 export default function ContactPage() {
@@ -164,21 +160,19 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-sage/20 aspect-[16/10] flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin
-                    size={32}
-                    className="text-sage-dark mx-auto mb-3"
-                  />
-                  <p className="font-sans text-sage-dark text-sm uppercase tracking-wider">
-                    Map Coming Soon
-                  </p>
-                  <p className="font-sans text-sage-dark/70 text-xs mt-1">
-                    4999 France Ave S, Edina, MN 55410
-                  </p>
-                </div>
-              </div>
+              {/* Google Map */}
+              <div className="aspect-[16/10] overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.5!2d-93.3530!3d44.8630!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f62a4a8b8e8c8d%3A0x1!2s7401+Metro+Blvd+Suite+350%2C+Edina%2C+MN+55439!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Keller Williams Realty Integrity - 7401 Metro Blvd Suite 350, Edina, MN 55439"
+                  className="w-full h-full"
+                /></div>
             </div>
           </div>
         </div>

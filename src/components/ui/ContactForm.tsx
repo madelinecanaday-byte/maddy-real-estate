@@ -22,9 +22,19 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = async () => {
-    // Simulate a brief network delay
-    await new Promise((resolve) => setTimeout(resolve, 600));
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const onSubmit = async (data: ContactFormData) => {
+    setSubmitError(null);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) {
+      setSubmitError("Something went wrong. Please try again or email me directly.");
+      return;
+    }
     setIsSubmitted(true);
   };
 
@@ -119,7 +129,7 @@ export default function ContactForm() {
         <input
           id="phone"
           type="tel"
-          placeholder="(952) 555-0123"
+          placeholder="(651) 325-8483"
           className="w-full border-b-2 border-gray-200 focus:border-terracotta bg-transparent py-3 font-sans text-charcoal placeholder:text-gray-400 outline-none transition-colors duration-300"
           {...register("phone")}
         />
@@ -167,6 +177,9 @@ export default function ContactForm() {
         )}
       </div>
 
+      {submitError && (
+        <p className="text-sm text-terracotta font-sans">{submitError}</p>
+      )}
       <div className="pt-4">
         <Button type="submit" variant="primary" size="lg" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}

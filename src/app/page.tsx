@@ -6,6 +6,7 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import NeighborhoodSpotlight from "@/components/home/NeighborhoodSpotlight";
 import CTASection from "@/components/home/CTASection";
 import BlogPreview from "@/components/home/BlogPreview";
+import NewsletterSignup from "@/components/home/NewsletterSignup";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TestimonialCarousel />
       <NeighborhoodSpotlight />
       <BlogPreview />
+      <NewsletterSignup />
       <CTASection />
     </>
   );

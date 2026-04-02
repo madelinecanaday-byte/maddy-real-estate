@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -12,17 +12,15 @@ const quickLinks = [
 ];
 
 const services = [
-  { href: "/contact", label: "Buying" },
-  { href: "/contact", label: "Selling" },
-  { href: "/contact", label: "Relocation" },
-  { href: "/contact", label: "Investment" },
+  { href: "/book", label: "Book a Consultation" },
+  { href: "/home-valuation", label: "Home Valuation" },
+  { href: "/resources", label: "Guides & Resources" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 const socialLinks = [
-  { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
-  { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "https://youtube.com", icon: Youtube, label: "YouTube" },
+  { href: "https://www.instagram.com/maddy.canaday/", icon: Instagram, label: "Instagram" },
+  { href: "https://www.facebook.com/maddycanaday", icon: Facebook, label: "Facebook" },
 ];
 
 export default function Footer() {
@@ -108,10 +106,10 @@ export default function Footer() {
                   Phone
                 </p>
                 <a
-                  href="tel:+19525551234"
+                  href="tel:+16513258483"
                   className="hover:text-terracotta-light transition-colors duration-300"
                 >
-                  (952) 555-1234
+                  (651) 325-8483
                 </a>
               </div>
               <div>
@@ -119,10 +117,10 @@ export default function Footer() {
                   Email
                 </p>
                 <a
-                  href="mailto:maddy@maddycanaday.com"
+                  href="mailto:madelinecanaday@kw.com"
                   className="hover:text-terracotta-light transition-colors duration-300"
                 >
-                  maddy@maddycanaday.com
+                  madelinecanaday@kw.com
                 </a>
               </div>
               <div>
@@ -130,9 +128,9 @@ export default function Footer() {
                   Office
                 </p>
                 <p className="leading-relaxed">
-                  4999 France Ave S
+                  7401 Metro Blvd Suite 350
                   <br />
-                  Edina, MN 55410
+                  Edina, MN 55439
                 </p>
               </div>
             </div>

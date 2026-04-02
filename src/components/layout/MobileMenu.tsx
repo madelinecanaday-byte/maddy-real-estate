@@ -14,10 +14,10 @@ interface MobileMenuProps {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/listings", label: "Listings" },
   { href: "/neighborhoods", label: "Neighborhoods" },
   { href: "/blog", label: "Blog" },
   { href: "/calculator", label: "Calculator" },
+  { href: "/home-valuation", label: "Home Value" },
   { href: "/contact", label: "Contact" },
 ];
 

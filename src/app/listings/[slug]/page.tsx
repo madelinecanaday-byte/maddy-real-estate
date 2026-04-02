@@ -225,18 +225,18 @@ export default function ListingDetailPage({ params }: ListingPageProps) {
                 </div>
                 <div className="mt-6 space-y-3">
                   <a
-                    href="tel:+19525550123"
+                    href="tel:+16513258483"
                     className="flex items-center gap-3 font-sans text-sm text-charcoal-light hover:text-terracotta transition-colors duration-300"
                   >
                     <Phone size={16} className="text-terracotta" />
-                    (952) 555-0123
+                    (651) 325-8483
                   </a>
                   <a
-                    href="mailto:maddy@maddycanaday.com"
+                    href="mailto:madelinecanaday@kw.com"
                     className="flex items-center gap-3 font-sans text-sm text-charcoal-light hover:text-terracotta transition-colors duration-300"
                   >
                     <Mail size={16} className="text-terracotta" />
-                    maddy@maddycanaday.com
+                    madelinecanaday@kw.com
                   </a>
                 </div>
               </div>
